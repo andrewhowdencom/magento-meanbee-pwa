@@ -13,7 +13,7 @@ if [ $(find $MAGE_ROOT_DIR -maxdepth 0 -type d -empty 2>/dev/null) ]; then
         --dbPass=magento                                    \
         --dbName=magento                                    \
         --useDefaultConfigParams=yes                        \
-        --baseUrl="https://pwa-magento.docker/"
+        --baseUrl="http://pwa-magento.docker/"
 
     chgrp -R 33 $MAGE_ROOT_DIR/media $MAGE_ROOT_DIR/var
     find $MAGE_ROOT_DIR/media $MAGE_ROOT_DIR/var -type d -exec chmod 775 {} +
